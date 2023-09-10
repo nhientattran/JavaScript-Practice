@@ -53,8 +53,8 @@ function longest(s1, s2) {
 // Note that 121 has twice the digit 1.
 
 function nbDig(n, d) {
-    const squareList = []
-    const count = 0
+    let squareList = []
+    let count = 0
     for (let k = 0; k <= n; k ++) {
         squareList.push(k*k)
     }
@@ -69,3 +69,4 @@ function nbDig(n, d) {
     return count
 }
 
+console.log(nbDig(10, 1))
