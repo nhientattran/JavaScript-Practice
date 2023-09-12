@@ -59,7 +59,7 @@ function nbDig(n, d) {
         squareList.push(k*k)
     }
     for (let i = 0; i < squareList.length; i ++) {
-        const squareStr = squareList[i].toString()
+        let squareStr = squareList[i].toString()
         for (let j = 0; j < squareStr.length; j ++) {
             if (parseInt(squareStr[j]) === d) {
                 count ++
